@@ -1,0 +1,131 @@
+/* ------------------General CSS----------------------- */
+:root {
+    /* font-family */
+    --main-font: "Anton";
+    --text-font: "Questrial";
+
+    /* font-color */
+    --main-font-color: #99413e;
+    --text-font-color: #8f3034;
+
+    /* main-color */
+    --1st-color: pink;
+    --2st-color: black;
+}
+
+.isActive {
+    background: var(--1st-color);
+    color: black !important;
+}
+
+body {
+    width: 100%;
+    font-size: clamp(14px, 1.05vw, 16px);
+    min-width: 1150px;
+    min-height: 565px;
+    margin: 0;
+    font-family: var(--text-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .header {
+        background-color: var(--1st-color);
+        display: flex;
+        flex-direction: column;
+
+        .promo {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            align-items: center;
+
+            .new {
+                padding: 2px 10px;
+                background: white;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
+
+            .anchor {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: white;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .nav-bar {
+            border-radius: 25px 25px 0 0;
+            height: 50px;
+            background: var(--2st-color);
+            display: flex;
+
+            .remain {
+                width: 20%;
+            }
+
+            .switch {
+                width: 60%;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+                .a-sw {
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background: var(--1st-color);
+                        color: var(--2st-color);
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            .sign-box {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .signup-box {
+                    border: 1px solid white;
+                    color: white;
+                    padding: 7px 20px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background: white;
+                        color: var(--2st-color);
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+
+
+                }
+
+                .signin-box {
+                    background: white;
+                    border: 1px solid white;
+                    color: var(--2st-color);
+                    padding: 7px 20px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background: var(--2st-color);
+                        color: white;
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+}
