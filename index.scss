@@ -34,7 +34,7 @@ body {
         flex-direction: column;
 
         .promo {
-            height: 50px;
+            height: 40px;
             display: flex;
             flex-direction: row;
             margin: auto;
@@ -60,7 +60,7 @@ body {
 
         .nav-bar {
             border-radius: 25px 25px 0 0;
-            height: 50px;
+            height: 60px;
             background: var(--2st-color);
             display: flex;
 
@@ -78,7 +78,7 @@ body {
                 .a-sw {
                     color: white;
                     text-decoration: none;
-                    padding: 10px 20px;
+                    padding: 8px 20px;
                     border-radius: 10px;
 
                     &:hover {

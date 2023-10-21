@@ -1,18 +1,29 @@
 <section class="body">
-<div class="slider">
-      <span id="slide-1"></span>
-      <span id="slide-2"></span>
-      <span id="slide-3"></span>
-      <div class="image-container">
-        <img src="./img/test.jpg" class="slide" />
-        <img src="./img/test.jpg" class="slide" />
-        <img src="./img/test.jpg" class="slide" />
-      </div>
-      <div class="buttons">
-        <a class="slide-1 isShow anc" onclick="isShow('slide-1')" href="#slide-1"></a>
-        <a class="slide-2 anc" onclick="isShow('slide-2')" href="#slide-2"></a>
-        <a class="slide-3 anc" onclick="isShow('slide-3')" href="#slide-3"></a>
-      </div>
+<div  id="carouselExampleIndicators" class="carousel slide slides" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="btn"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="btn"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/test.jpg" class="d-block img" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="./img/test.jpg" class="d-block img" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="./img/test.jpg" class="d-block img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 </section>
 
